@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suda — мой сайт</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: radial-gradient(circle at top, #29244d, #0b0b12 60%);
+    }
+    .card {
+      width: min(90%, 700px);
+      padding: 55px 35px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 28px;
+      background: rgba(255,255,255,.07);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 25px 80px rgba(0,0,0,.45);
+    }
+    h1 { margin: 0 0 15px; font-size: clamp(48px, 10vw, 86px); }
+    p { margin: 0 0 30px; font-size: 20px; color: #c9c5d8; }
+    a {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 14px;
+      color: white;
+      text-decoration: none;
+      background: #6c4cff;
+      transition: .2s;
+    }
+    a:hover { transform: translateY(-3px); background: #8066ff; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Suda</h1>
+    <p>Добро пожаловать на мой первый сайт 🚀</p>
+    <a href="https://github.com/sudazl/my-site" target="_blank">Мой GitHub</a>
+  </main>
+</body>
+</html>
