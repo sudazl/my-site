@@ -38,8 +38,10 @@
       z-index: 1;
       width: calc(100% - 28px);
       margin-top: 18px;
-      padding: 28px 30px;
-      min-height: 105px;
+      padding: 0 30px;
+      height: 105px;
+      display: flex;
+      align-items: center;
       border: 1px solid rgba(255,255,255,.22);
       border-radius: 30px;
       background: linear-gradient(135deg, rgba(255,255,255,.16), rgba(255,255,255,.055));
@@ -55,6 +57,13 @@
       pointer-events: none;
       background: linear-gradient(115deg, rgba(255,255,255,.13), transparent 35%, transparent 65%, rgba(255,255,255,.05));
     }
+    .nick {
+      position: relative;
+      z-index: 1;
+      font-size: 30px;
+      font-weight: 650;
+      letter-spacing: -1px;
+    }
     .title {
       position: relative;
       z-index: 1;
@@ -66,13 +75,16 @@
       text-shadow: 0 8px 35px rgba(0,0,0,.28);
     }
     @media (max-width: 520px) {
-      .glass { width: calc(100% - 18px); margin-top: 10px; min-height: 88px; border-radius: 25px; }
+      .glass { width: calc(100% - 18px); margin-top: 10px; height: 88px; border-radius: 25px; }
+      .nick { font-size: 25px; }
       .title { margin-top: 24px; font-size: 40px; }
     }
   </style>
 </head>
 <body>
-  <header class="glass"></header>
+  <header class="glass">
+    <div class="nick">suda</div>
+  </header>
   <h1 class="title">галерея</h1>
 </body>
 </html>
