@@ -12,9 +12,9 @@
     body::before { content:""; position:fixed; width:380px; height:380px; border-radius:50%; background:rgba(145,120,255,.18); filter:blur(90px); top:-120px; right:-80px; }
     .glass { position:relative; z-index:1; width:calc(100% - 28px); margin-top:18px; height:105px; display:flex; align-items:center; justify-content:center; overflow:hidden; border:1px solid rgba(255,255,255,.22); border-radius:30px; background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(255,255,255,.055)); backdrop-filter:blur(30px) saturate(160%); -webkit-backdrop-filter:blur(30px) saturate(160%); box-shadow:inset 0 1px 1px rgba(255,255,255,.18),0 25px 80px rgba(0,0,0,.42); }
     .glass::after { content:""; position:absolute; inset:1px; border-radius:inherit; pointer-events:none; background:linear-gradient(115deg,rgba(255,255,255,.13),transparent 35%,transparent 65%,rgba(255,255,255,.05)); }
-    .nick { position:relative; z-index:1; font-size:95px; font-weight:700; letter-spacing:-4px; transform:rotate(-7deg) scaleX(1.28); filter:blur(1.2px); opacity:.82; text-shadow:0 4px 18px rgba(255,255,255,.12),0 8px 25px rgba(0,0,0,.35); line-height:.8; }
+    .nick { position:relative; z-index:1; font-size:95px; font-weight:700; letter-spacing:-4px; transform:rotate(-7deg) scaleX(1.7); filter:blur(4px); opacity:.72; text-shadow:0 5px 25px rgba(255,255,255,.15),0 10px 30px rgba(0,0,0,.4); line-height:.8; }
     .title { position:relative; z-index:1; margin:28px 0 0; font-size:clamp(38px,7vw,64px); line-height:1; letter-spacing:-2.5px; font-weight:700; text-shadow:0 8px 35px rgba(0,0,0,.28); }
-    @media (max-width:520px) { .glass{width:calc(100% - 18px);margin-top:10px;height:88px;border-radius:25px}.nick{font-size:78px}.title{margin-top:24px;font-size:40px} }
+    @media (max-width:520px) { .glass{width:calc(100% - 18px);margin-top:10px;height:88px;border-radius:25px}.nick{font-size:78px;transform:rotate(-7deg) scaleX(1.55);filter:blur(3.5px)}.title{margin-top:24px;font-size:40px} }
   </style>
 </head>
 <body>
