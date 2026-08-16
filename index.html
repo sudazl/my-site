@@ -38,10 +38,11 @@
       z-index: 1;
       width: calc(100% - 28px);
       margin-top: 18px;
-      padding: 0 30px;
       height: 105px;
       display: flex;
       align-items: center;
+      justify-content: center;
+      overflow: hidden;
       border: 1px solid rgba(255,255,255,.22);
       border-radius: 30px;
       background: linear-gradient(135deg, rgba(255,255,255,.16), rgba(255,255,255,.055));
@@ -60,9 +61,13 @@
     .nick {
       position: relative;
       z-index: 1;
-      font-size: 30px;
-      font-weight: 650;
-      letter-spacing: -1px;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      transform: rotate(-7deg) scaleX(1.18);
+      filter: blur(.8px);
+      opacity: .82;
+      text-shadow: 0 4px 18px rgba(255,255,255,.12), 0 8px 25px rgba(0,0,0,.35);
     }
     .title {
       position: relative;
@@ -76,7 +81,7 @@
     }
     @media (max-width: 520px) {
       .glass { width: calc(100% - 18px); margin-top: 10px; height: 88px; border-radius: 25px; }
-      .nick { font-size: 25px; }
+      .nick { font-size: 31px; }
       .title { margin-top: 24px; font-size: 40px; }
     }
   </style>
